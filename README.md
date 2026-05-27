@@ -1,3 +1,9 @@
+<div align="center">
+
+[English](README.en.md) | [中文](README.md)
+
+</div>
+
 # Daily News - 每日新闻订阅平台
 
 一个基于 Next.js 构建的现代化每日新闻订阅平台，使用 Inngest 实现定时任务调度，通过 Resend 发送每日新闻摘要邮件。
