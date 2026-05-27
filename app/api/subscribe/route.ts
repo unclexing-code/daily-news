@@ -22,7 +22,7 @@ export async function POST(request: Request) {
   // 2. add account to contact list
   const {error:AddError} = await resend.contacts.segments.add({
     email:email,
-    segmentId: "77b70d5c-8dd1-49ec-aea2-40d99acd3d93",
+    segmentId: process.env.SEGMENT_ID!,
   })
 
   if (AddError) {
@@ -38,3 +38,4 @@ export async function POST(request: Request) {
     headers: { "Content-Type": "application/json" },
   });
 }
+
